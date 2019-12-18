@@ -1,9 +1,8 @@
 //index.js
-import _page from '../../lib/mini/index'
 //获取应用实例
 const app = getApp()
 
-_page.CreatePage({
+app.$page({
   data: {
     motto: 'Hello World',
     userInfo: {},
@@ -42,7 +41,7 @@ _page.CreatePage({
     })
   },
   onLoad: function () {
-    console.log(this.data)
+    console.log(this)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

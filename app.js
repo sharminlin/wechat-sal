@@ -1,9 +1,12 @@
 //app.js
-import EventBus, { BUS_EVENT_NAME } from './lib/mini/eventBus'
+import createPage, { BUS_EVENT_NAME } from './init'
+import EventBus from './lib/mini/eventBus'
 const bus = new EventBus()
+const $page = createPage().page
 
 App({
   $bus: bus,
+  $page: $page,
   hasLogin: false,
 
   onLaunch: function () {
@@ -46,6 +49,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    qiniuHost: '/'
   }
 })
