@@ -6,7 +6,7 @@ export const BUS_EVENT_NAME = {
 }
 
 function createPage () {
-  const before = {
+  const options = {
     data () {
       const app = getApp()
       return {
@@ -41,7 +41,7 @@ function createPage () {
     }
   }
 
-  const page = new CreatePage(before)
+  const page = new CreatePage(options)
   page.mixins({
     handleNavigate: function () {}
   })
