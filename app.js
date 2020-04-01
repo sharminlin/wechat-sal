@@ -1,7 +1,7 @@
 //app.js
 import createPage from './main/main'
 import { BUS_EVENT_NAME } from './utils/constant'
-import EventBus from './lib/mini/eventBus'
+import { EventBus } from './lib/mini/index'
 const bus = new EventBus()
 const $page = createPage().page
 
