@@ -1,5 +1,6 @@
 //app.js
-import createPage, { BUS_EVENT_NAME } from './init'
+import createPage from './main/main'
+import { BUS_EVENT_NAME } from './utils/constant'
 import EventBus from './lib/mini/eventBus'
 const bus = new EventBus()
 const $page = createPage().page
@@ -49,6 +50,7 @@ App({
     })
   },
   globalData: {
+    prePageInfo: [],
     userInfo: null,
     qiniuHost: '/'
   }

@@ -1,7 +1,7 @@
 //logs.js
 const util = require('../../utils/util.js')
 
-Page({
+getApp().$page({
   data: {
     logs: []
   },
