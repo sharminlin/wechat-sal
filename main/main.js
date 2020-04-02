@@ -1,4 +1,4 @@
-import { CreatePage } from '../lib/mini/index'
+import { CreatePage } from 'fine-mini'
 import {
   handleNavigateTo
 } from './handlers'
@@ -6,7 +6,7 @@ import { BUS_EVENT_NAME } from '../utils/constant'
 import { getUrlAndQuery, getPagePath } from '../utils/query'
 import { recordPageVisitLog, sendPageVisitLog } from './fineIO'
 
-function createPage () {
+function page () {
   const page = new CreatePage({
     data () {
       return {
@@ -64,4 +64,4 @@ function createPage () {
   return page
 }
 
-export default createPage
+export default page
