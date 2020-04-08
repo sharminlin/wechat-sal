@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/SharminHall/wechat-sal#readme",
   "dependencies": {
-    "fine-mini": "0.0.2"
+    "fine-mini": "0.0.3"
   }
 }
